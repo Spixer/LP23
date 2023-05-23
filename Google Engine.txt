@@ -1,0 +1,29 @@
+Sign up for a Google Cloud account if you haven't already done so. You will need to provide billing information, but there is a free tier that you can use to get started.
+
+Install the Google Cloud SDK on your computer. You can download it from the official Google Cloud website: https://cloud.google.com/sdk/docs/install
+
+Once the SDK is installed, open a terminal or command prompt and run the following command to log in to your Google Cloud account:
+
+Copy code
+gcloud auth login
+Next, you will need to create a new project in the Google Cloud Console. Go to the console, click on the project dropdown in the top navigation bar, and select "New Project". Follow the prompts to create the project.
+
+After the project is created, go back to your terminal or command prompt and run the following command to set the default project:
+
+arduino
+Copy code
+gcloud config set project <project-id>
+Replace <project-id> with the ID of the project you just created.
+
+Now you can install the Google App Engine component by running the following command:
+Copy code
+gcloud components install app-engine-python
+This will install the Python runtime for App Engine.
+
+Finally, you can create a new App Engine application by running the following command:
+lua
+Copy code
+gcloud app create
+
+
+App Engine
